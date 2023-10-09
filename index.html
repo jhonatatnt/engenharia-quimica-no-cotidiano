@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto EEA</title>
+	
+	<link rel="stylesheet" href="assets/css/style.css" media="screen and (min-width: 801px)">
+	<link rel="stylesheet" href="assets/css/style800.css" media="screen and (max-width: 800px)">
+</head>
+<body>
+	<div id="content">
+        <div id="ban_search">
+            <div id="op_inicio-container">
+                <p id="title">Engenharia química no cotidiano</p>
+                <p id="subtitle">Vamos descobrir como as coisas são feitas?</p>
+
+                <div style="display: flex; flex-wrap: wrap; width: 100%; flex-direction: column; padding-top: 22.5px; border-top: 1px solid rgba(0, 0, 0, 0.15);">
+                    <button class="btn_submit" onclick="quiz('1')">Caneta</button>
+                    <button class="btn_submit" onclick="quiz('2')">Iogurte</button>
+                    <button class="btn_submit" onclick="quiz('3')">Perfume</button>
+                    <button class="btn_submit" onclick="quiz('4')">Água</button>
+                </div>
+            </div>
+
+            <div id="quiz" style="display: none;">
+                <div id="quiz_header"><button onclick="cancel()">Fechar</button></div>
+
+                <div id="ban_quiz">
+                    <div id="quiz_img_container"><img id="quiz_img" src=""></div>
+
+                    <div class="quiz-container">
+                        <div id="question-container">
+                            <p id="question-text"></p>
+                        </div>
+                        <div id="options-container">
+                            <!-- Opções de resposta serão inseridas aqui -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ban_result">
+                    <button onclick="nextQuestion()">Próxima Pergunta</button>
+                    <p id="score">Pontuação: 0</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/data.js" type="text/javascript"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
+</body>
+</html>
