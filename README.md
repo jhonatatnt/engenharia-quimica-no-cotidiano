@@ -35,8 +35,8 @@ Para executar o projeto localmente, siga estas etapas:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/jhonatatnt/projeto-EEA.git
+git clone https://github.com/jhonatatnt/engenharia-quimica-no-cotidiano.git
 
 # Acesse o diretório do projeto
-cd projeto-EEA
+cd engenharia-quimica-no-cotidiano
 
